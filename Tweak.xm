@@ -1,1 +1,413 @@
-PCFET0NUWVBFIGh0bWw+CjxodG1sIGxhbmc9InZpIj4KPGhlYWQ+CiAgICA8bWV0YSBjaGFyc2V0PSJVVEYtOCI+CiAgICA8bWV0YSBuYW1lPSJ2aWV3cG9ydCIgY29udGVudD0id2lkdGg9ZGV2aWNlLXdpZHRoLCBpbml0aWFsLXNjYWxlPTEuMCwgbWF4aW11bS1zY2FsZT0xLjAsIHVzZXItc2NhbGFibGU9bm8iPgogICAgPHRpdGxlPlFVWUhPQU5HIEZYWSAtIEVMSVRFIExVWFVSWSB2NC44PC90aXRsZT4KICAgIDxsaW5rIHJlbD0ic3R5bGVzaGVldCIgaHJlZj0iaHR0cHM6Ly9jZG5qcy5jbG91ZGZsYXJlLmNvbS9hamF4L2xpYnMvZm9udC1hd2Vzb21lLzYuNC4wL2Nzcy9hbGwubWluLmNzcyI+CiAgICA8c3R5bGU+CiAgICAgICAgLyogQ1NTIENPTUJJTkVEIC0gRUxJVEUgU1lTVEVNICovCiAgICAgICAgOnJvb3QgeyAKICAgICAgICAgICAgLS1iZy1kZWVwOiAjMDYwODBjOyAKICAgICAgICAgICAgLS1hY2NlbnQtc29mdDogI2Y4ZmFmYzsKICAgICAgICAgICAgLS10ZXh0LWRpbTogIzk0YTNiODsKICAgICAgICAgICAgLS1nbGFzcy1ib3JkZXI6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wOCk7CiAgICAgICAgICAgIC0taW5wdXQtYmc6IHJnYmEoMjU1LCAyNTUsIDI1NSwgMC4wMyk7CiAgICAgICAgICAgIC0tcHJpbWFyeTogIzAwZjJmZjsgCiAgICAgICAgICAgIC0tc2hhZG93OiAjNzAwMGZmOyAKICAgICAgICAgICAgLS1zdWNjZXNzOiAjNGNkOTY0OyAKICAgICAgICAgICAgLS1iZzogIzAwMDsgCiAgICAgICAgfQoKICAgICAgICAqIHsgbWFyZ2luOiAwOyBwYWRkaW5nOiAwOyBib3gtc2l6aW5nOiBib3JkZXItYm94OyBmb250LWZhbWlseTogLWFwcGxlLXN5c3RlbSwgQmxpbmtNYWNTeXN0ZW1Gb250LCAiU2Vnb2UgVUkiLCBSb2JvdG8sIHNhbnMtc2VyaWY7IC13ZWJraXQtdGFwLWhpZ2hsaWdodC1jb2xvcjogdHJhbnNwYXJlbnQ7IH0KCiAgICAgICAgYm9keSB7IGJhY2tncm91bmQ6IHZhcigtLWJnLWRlZXApOyBoZWlnaHQ6IDEwMHZoOyBjb2xvcjogd2hpdGU7IG92ZXJmbG93OiBoaWRkZW47IGRpc3BsYXk6IGZsZXg7IGFsaWduLWl0ZW1zOiBjZW50ZXI7IGp1c3RpZnktY29udGVudDogY2VudGVyOyBwb3NpdGlvbjogcmVsYXRpdmU7IH0KCiAgICAgICAgLyogQmFja2dyb3VuZCBFZmZlY3RzICovCiAgICAgICAgY2FudmFzIHsgcG9zaXRpb246IGZpeGVkOyB0b3A6IDA7IGxlZnQ6IDA7IHotaW5kZXg6IDE7IG9wYWNpdHk6IDAuNjsgfQogICAgICAgIC5vdmVybGF5IHsgcG9zaXRpb246IGZpeGVkOyBpbnNldDogMDsgYmFja2dyb3VuZDogcmFkaWFsLWdyYWRpZW50KGNpcmNsZSwgdHJhbnNwYXJlbnQgMjAlLCAjMDAwIDEwMCUpOyB6LWluZGV4OiAyOyB9CgogICAgICAgIC8qIC0tLSBVSSBBVVRIIFNUWUxFIC0tLSAqLwogICAgICAgIC5hdXRoLWNvbnRhaW5lciB7IAogICAgICAgICAgICBwb3NpdGlvbjogcmVsYXRpdmU7IHotaW5kZXg6IDEwOwogICAgICAgICAgICBiYWNrZ3JvdW5kOiByZ2JhKDE1LCAyMywgNDIsIDAuNik7IAogICAgICAgICAgICBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoMjVweCk7IAogICAgICAgICAgICAtd2Via2l0LWJhY2tkcm9wLWZpbHRlcjogYmx1cigyNXB4KTsgCiAgICAgICAgICAgIHBhZGRpbmc6IDU1cHggMzVweDsgYm9yZGVyLXJhZGl1czogNDBweDsgCiAgICAgICAgICAgIHdpZHRoOiA5MCU7IG1heC13aWR0aDogMzUwcHg7IHRleHQtYWxpZ246IGNlbnRlcjsgCiAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWdsYXNzLWJvcmRlcik7IAogICAgICAgICAgICBib3gtc2hhZG93OiAwIDQwcHggMTAwcHggcmdiYSgwLCAwLCAwLCAwLjYpOwogICAgICAgICAgICB0cmFuc2l0aW9uOiBhbGwgMC41cyBlYXNlOwogICAgICAgIH0KCiAgICAgICAgLmxvZ28tYm94IGkgeyBmb250LXNpemU6IDMuMnJlbTsgY29sb3I6IHZhcigtLWFjY2VudC1zb2Z0KTsgYW5pbWF0aW9uOiBicmVhdGhlIDRzIGVhc2UtaW4tb3V0IGluZmluaXRlOyB9CiAgICAgICAgQGtleWZyYW1lcyBicmVhdGhlIHsgMCUsIDEwMCUgeyB0cmFuc2Zvcm06IHNjYWxlKDEpOyBvcGFjaXR5OiAxOyB9IDUwJSB7IHRyYW5zZm9ybTogc2NhbGUoMC45Nik7IG9wYWNpdHk6IDAuNzsgfSB9CgogICAgICAgIC5hdXRoLWgyIHsgZm9udC1zaXplOiAxLjFyZW07IGxldHRlci1zcGFjaW5nOiA0cHg7IG1hcmdpbjogMTVweCAwIDhweDsgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsgY29sb3I6ICNmZmZmZmY7IH0KICAgICAgICAuZGVzYyB7IGZvbnQtc2l6ZTogMC43NXJlbTsgY29sb3I6IHZhcigtLXRleHQtZGltKTsgbWFyZ2luLWJvdHRvbTogNDBweDsgbGluZS1oZWlnaHQ6IDEuNzsgfQoKICAgICAgICAuaW5wdXQtZ3JvdXAgaW5wdXQgeyAKICAgICAgICAgICAgd2lkdGg6IDEwMCU7IHBhZGRpbmc6IDE4cHg7IGJvcmRlci1yYWRpdXM6IDE4cHg7IGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLWdsYXNzLWJvcmRlcik7IAogICAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1pbnB1dC1iZyk7IGNvbG9yOiB3aGl0ZTsgdGV4dC1hbGlnbjogY2VudGVyOyBvdXRsaW5lOiBub25lOyBtYXJnaW4tYm90dG9tOiAyMHB4OwogICAgICAgIH0KCiAgICAgICAgLmJ0bi1hdXRoIHsgCiAgICAgICAgICAgIHdpZHRoOiAxMDAlOyBwYWRkaW5nOiAxN3B4OyBib3JkZXItcmFkaXVzOiAxOHB4OyBib3JkZXI6IG5vbmU7IAogICAgICAgICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1hY2NlbnQtc29mdCk7IGNvbG9yOiAjMDAwOyBmb250LXdlaWdodDogNjAwOyBjdXJzb3I6IHBvaW50ZXI7IAogICAgICAgIH0KCiAgICAgICAgLyogLS0tIFVJIE1BSU4gTUVOVSBTVFlMRSAtLS0gKi8KICAgICAgICAjdWktbWFpbi1tZW51IHsgCiAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7IHdpZHRoOiAxMDAlOyBoZWlnaHQ6IDEwMHZoOyBmbGV4LWRpcmVjdGlvbjogY29sdW1uOyAKICAgICAgICAgICAgcG9zaXRpb246IHJlbGF0aXZlOyB6LWluZGV4OiAxMDsgYmFja2dyb3VuZDogdmFyKC0tYmcpOyAKICAgICAgICB9CgogICAgICAgIC5oZWFkZXIgeyBwYWRkaW5nOiAyNXB4IDIwcHggMTBweDsgdGV4dC1hbGlnbjogY2VudGVyOyB9CiAgICAgICAgLmxvZ28tbHV4dXJ5IHsgZm9udC1zaXplOiAzLjVyZW07IGNvbG9yOiAjZmZmOyBmaWx0ZXI6IGRyb3Atc2hhZG93KDAgMCAxNXB4IHZhcigtLXByaW1hcnkpKTsgYW5pbWF0aW9uOiBnbG93IDIuNXMgaW5maW5pdGU7IH0KICAgICAgICBAa2V5ZnJhbWVzIGdsb3cgeyAwJSwgMTAwJSB7IG9wYWNpdHk6IDAuNTsgdHJhbnNmb3JtOiBzY2FsZSgwLjk4KTsgfSA1MCUgeyBvcGFjaXR5OiAxOyB0cmFuc2Zvcm06IHNjYWxlKDEuMDUpOyBmaWx0ZXI6IGRyb3Atc2hhZG93KDAgMCAyNXB4IHZhcigtLXNoYWRvdykpOyB9IH0KCiAgICAgICAgLnN0YXRzLWJhciB7IGRpc3BsYXk6IGZsZXg7IGp1c3RpZnktY29udGVudDogc3BhY2UtYXJvdW5kOyBwYWRkaW5nOiAxMnB4OyBiYWNrZ3JvdW5kOiByZ2JhKDAsMCwwLDAuODUpOyBiYWNrZHJvcC1maWx0ZXI6IGJsdXIoMjBweCk7IGJvcmRlci1ib3R0b206IDJweCBzb2xpZCB2YXIoLS1wcmltYXJ5KTsgfQogICAgICAgIC5zdC12IHsgZm9udC13ZWlnaHQ6IDkwMDsgY29sb3I6IHZhcigtLXByaW1hcnkpOyBmb250LXNpemU6IDAuODVyZW07IH0KICAgICAgICAuc3QtbCB7IGZvbnQtc2l6ZTogMC41cmVtOyBjb2xvcjogI2FhYTsgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsgbGV0dGVyLXNwYWNpbmc6IDJweDsgfQoKICAgICAgICAuaW1wb3J0LWJveCB7IG1hcmdpbjogMTVweDsgcGFkZGluZzogMTVweDsgYmFja2dyb3VuZDogcmdiYSgyNTUsMjU1LDI1NSwwLjA1KTsgYm9yZGVyLXJhZGl1czogMjBweDsgYm9yZGVyOiAxcHggZGFzaGVkIHZhcigtLXByaW1hcnkpOyB0ZXh0LWFsaWduOiBjZW50ZXI7IH0KICAgICAgICAuZmlsZS1sYWJlbCB7IGRpc3BsYXk6IGJsb2NrOyBwYWRkaW5nOiAxMHB4OyBiYWNrZ3JvdW5kOiByZ2JhKDAsIDI0MiwgMjU1LCAwLjEpOyBib3JkZXItcmFkaXVzOiAxMnB4OyBib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1wcmltYXJ5KTsgY29sb3I6IHZhcigtLXByaW1hcnkpOyBmb250LXNpemU6IDAuN3JlbTsgZm9udC13ZWlnaHQ6IGJvbGQ7IGN1cnNvcjogcG9pbnRlcjsgfQoKICAgICAgICAuc2Nyb2xsIHsgZmxleC1ncm93OiAxOyBvdmVyZmxvdy15OiBhdXRvOyBwYWRkaW5nOiAwIDE1cHggNDBweCAxNXB4OyB9CiAgICAgICAgLmNhcmQgeyBiYWNrZ3JvdW5kOiByZ2JhKDI1NSwyNTUsMjU1LDAuMDMpOyBib3JkZXItcmFkaXVzOiAyMHB4OyBwYWRkaW5nOiAxNnB4OyBkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47IG1hcmdpbi1ib3R0b206IDEycHg7IGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4xKTsgfQogICAgICAgIC5jYXJkLmFjdGl2ZSB7IGJvcmRlci1jb2xvcjogdmFyKC0tc3VjY2Vzcyk7IGJhY2tncm91bmQ6IHJnYmEoNzYsIDIxNywgMTAwLCAwLjEyKTsgfQoKICAgICAgICAuaWNvbi1ib3ggeyB3aWR0aDogNDJweDsgaGVpZ2h0OiA0MnB4OyBiYWNrZ3JvdW5kOiAjMDAwOyBib3JkZXItcmFkaXVzOiAxMnB4OyBkaXNwbGF5OiBmbGV4OyBhbGlnbi1pdGVtczogY2VudGVyOyBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgbWFyZ2luLXJpZ2h0OiAxMnB4OyBjb2xvcjogdmFyKC0tcHJpbWFyeSk7IGJvcmRlcjogMXB4IHNvbGlkIHZhcigtLXByaW1hcnkpOyB9CiAgICAgICAgLnN3aXRjaCB7IHdpZHRoOiA1MHB4OyBoZWlnaHQ6IDI2cHg7IC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTsgYmFja2dyb3VuZDogIzMzMzsgYm9yZGVyLXJhZGl1czogMjBweDsgcG9zaXRpb246IHJlbGF0aXZlOyBjdXJzb3I6IHBvaW50ZXI7IHRyYW5zaXRpb246IDAuNHM7IH0KICAgICAgICAuc3dpdGNoOmNoZWNrZWQgeyBiYWNrZ3JvdW5kOiB2YXIoLS1zdWNjZXNzKTsgfQogICAgICAgIC5zd2l0Y2g6OmJlZm9yZSB7IGNvbnRlbnQ6ICIiOyBwb3NpdGlvbjogYWJzb2x1dGU7IHdpZHRoOiAyMHB4OyBoZWlnaHQ6IDIwcHg7IGJvcmRlci1yYWRpdXM6IDUwJTsgdG9wOiAzcHg7IGxlZnQ6IDNweDsgYmFja2dyb3VuZDogI2ZmZjsgdHJhbnNpdGlvbjogMC40czsgfQogICAgICAgIC5zd2l0Y2g6Y2hlY2tlZDo6YmVmb3JlIHsgbGVmdDogMjdweDsgfQoKICAgICAgICAuY29uc29sZSB7IGhlaWdodDogMTEwcHg7IGJhY2tncm91bmQ6ICMwMDA7IGJvcmRlci10b3A6IDJweCBzb2xpZCB2YXIoLS1wcmltYXJ5KTsgcGFkZGluZzogMTVweDsgZm9udC1mYW1pbHk6IG1vbm9zcGFjZTsgZm9udC1zaXplOiAwLjY1cmVtOyBjb2xvcjogdmFyKC0tc3VjY2Vzcyk7IG92ZXJmbG93LXk6IGF1dG87IHRleHQtYWxpZ246IGxlZnQ7IH0KICAgICAgICBiIHsgZm9udC1zaXplOiAwLjg1cmVtOyBjb2xvcjogI2ZmZjsgZGlzcGxheTogYmxvY2s7IH0KICAgICAgICBzbWFsbCB7IGNvbG9yOiB2YXIoLS1wcmltYXJ5KTsgZm9udC1zaXplOiAwLjZyZW07IGZvbnQtd2VpZ2h0OiBib2xkOyB9CgogICAgICAgIC8qIENvbW1vbiBDbGFzc2VzICovCiAgICAgICAgLmhpZGRlbiB7IGRpc3BsYXk6IG5vbmU7IG9wYWNpdHk6IDA7IH0KICAgICAgICAuc3Bpbm5lciB7IHdpZHRoOiAzNXB4OyBoZWlnaHQ6IDM1cHg7IGJvcmRlcjogMnB4IHNvbGlkIHJnYmEoMjU1LDI1NSwyNTUsMC4wNSk7IGJvcmRlci10b3A6IDJweCBzb2xpZCB2YXIoLS1hY2NlbnQtc29mdCk7IGJvcmRlci1yYWRpdXM6IDUwJTsgYW5pbWF0aW9uOiBzcGluIDFzIGluZmluaXRlOyBtYXJnaW46IDAgYXV0byAxNXB4OyB9CiAgICAgICAgQGtleWZyYW1lcyBzcGluIHsgMTAwJSB7IHRyYW5zZm9ybTogcm90YXRlKDM2MGRlZyk7IH0gfQogICAgICAgIC5mYWRlLWluIHsgYW5pbWF0aW9uOiBmYWRlSW4gMC44cyBmb3J3YXJkczsgfQogICAgICAgIEBrZXlmcmFtZXMgZmFkZUluIHsgZnJvbSB7IG9wYWNpdHk6IDA7IH0gdG8geyBvcGFjaXR5OiAxOyB9IH0KICAgIDwvc3R5bGU+CjwvaGVhZD4KPGJvZHk+CgogICAgPGNhbnZhcyBpZD0ibmV1cmFsQ2FudmFzIj48L2NhbnZhcz4KICAgIDxkaXYgY2xhc3M9Im92ZXJsYXkiPjwvZGl2PgoKICAgIDxkaXYgaWQ9InVpLWF1dGgiIGNsYXNzPSJhdXRoLWNvbnRhaW5lciI+CiAgICAgICAgPGRpdiBjbGFzcz0ibG9nby1ib3giPjxpIGNsYXNzPSJmYS1icmFuZHMgZmEtYXBwbGUiPjwvaT48L2Rpdj4KICAgICAgICA8aDIgY2xhc3M9ImF1dGgtaDIiPkVsaXRlIFN5c3RlbTwvaDI+CiAgICAgICAgPHAgY2xhc3M9ImRlc2MiPlZ1aSBsw7JuZyBob8OgbiB04bqldCB4w6FjIG1pbmggZGFuaCB0w61uaDxicj7EkeG7gyB0cnV5IGPhuq1wIHbDoG8gaOG7hyB0aOG7kW5nIG3DoyBow7NhLjwvcD4KICAgICAgICAKICAgICAgICA8ZGl2IGlkPSJhdXRoLWZvcm0iPgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJpbnB1dC1ncm91cCI+CiAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0idGV4dCIgaWQ9InVzZXJJbnB1dCIgcGxhY2Vob2xkZXI9Ik5o4bqtcCB0w6puIGPhu6dhIGLhuqFuLi4uIiBhdXRvY29tcGxldGU9Im9mZiI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8YnV0dG9uIGNsYXNzPSJidG4tYXV0aCIgb25jbGljaz0iaGFuZGxlQWN0aXZhdGlvbigpIj5H4busSSBQSMOKIERVWeG7hlQ8L2J1dHRvbj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBpZD0idWktd2FpdCIgY2xhc3M9ImhpZGRlbiI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9InNwaW5uZXIiPjwvZGl2PgogICAgICAgICAgICA8cCBpZD0ic3R0LXRleHQiIHN0eWxlPSJmb250LXNpemU6IDAuN3JlbTsgbGV0dGVyLXNwYWNpbmc6IDJweDsgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTsgZm9udC13ZWlnaHQ6NjAwOyBjb2xvcjp2YXIoLS10ZXh0LWRpbSkiPsSQYW5nIGNo4budIEFkbWluIGR1eeG7h3QuLi48L3A+CiAgICAgICAgPC9kaXY+CiAgICA8L2Rpdj4KCiAgICA8ZGl2IGlkPSJ1aS1tYWluLW1lbnUiPgogICAgICAgIDxkaXYgY2xhc3M9ImhlYWRlciI+CiAgICAgICAgICAgIDxpIGNsYXNzPSJmYWIgZmEtYXBwbGUgbG9nby1sdXh1cnkiPjwvaT4KICAgICAgICAgICAgPGRpdiBzdHlsZT0iZm9udC1zaXplOiAwLjlyZW07IGZvbnQtd2VpZ2h0OiA5MDA7IGNvbG9yOiB2YXIoLS1wcmltYXJ5KTsgbGV0dGVyLXNwYWNpbmc6IDVweDsgbWFyZ2luLXRvcDogMTBweDsiPkVMSVRFIExVWFVSWSB2NC44PC9kaXY+CiAgICAgICAgPC9kaXY+CgogICAgICAgIDxkaXYgY2xhc3M9InN0YXRzLWJhciI+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9Iml0Ij48ZGl2IGNsYXNzPSJzdC12IiBpZD0iZnBzIj4xMjA8L2Rpdj48ZGl2IGNsYXNzPSJzdC1sIj5GUFM8L2Rpdj48L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iaXQiPjxkaXYgY2xhc3M9InN0LXYiIGlkPSJjb3JlLXN0dCIgc3R5bGU9ImNvbG9yOm9yYW5nZSI+U1lOQ0lORy4uLjwvZGl2PjxkaXYgY2xhc3M9InN0LWwiPlNUQVRVUzwvZGl2PjwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJpdCI+PGRpdiBjbGFzcz0ic3QtdiIgaWQ9InBpbmciPjFtczwvZGl2PjxkaXYgY2xhc3M9InN0LWwiPkxBVEVOQ1k8L2Rpdj48L2Rpdj4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0iaW1wb3J0LWJveCI+CiAgICAgICAgICAgIDxpbnB1dCB0eXBlPSJmaWxlIiBpZD0iZmlsZUlucHV0IiBzdHlsZT0iZGlzcGxheTpub25lIiBhY2NlcHQ9Ii5qcywudHh0IiBvbmNoYW5nZT0iaW1wb3J0RmlsZSh0aGlzKSI+CiAgICAgICAgICAgIDxsYWJlbCBmb3I9ImZpbGVJbnB1dCIgY2xhc3M9ImZpbGUtbGFiZWwiPgogICAgICAgICAgICAgICAgPGkgY2xhc3M9ImZhcyBmYS1maWxlLWltcG9ydCI+PC9pPiBOSOG6rFAgRklMRSBTQ1JJUFQgKC5KUykKICAgICAgICAgICAgPC9sYWJlbD4KICAgICAgICA8L2Rpdj4KCiAgICAgICAgPGRpdiBjbGFzcz0ic2Nyb2xsIj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZCI+CiAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJkaXNwbGF5OmZsZXg7IGFsaWduLWl0ZW1zOmNlbnRlcjsiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imljb24tYm94IiBzdHlsZT0iY29sb3I6ICNmZjVlMDA7Ij48aSBjbGFzcz0iZmFzIGZhLWZlYXRoZXIiPjwvaT48L2Rpdj4KICAgICAgICAgICAgICAgICAgICA8ZGl2PjxiPk5I4bq4IFTDgk0gMTAwJTwvYj48YnI+PHNtYWxsPk1lbW9yeSBNb2Q8L3NtYWxsPjwvZGl2PgogICAgICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgICAgICA8aW5wdXQgdHlwZT0iY2hlY2tib3giIGNsYXNzPSJzd2l0Y2giIG9uY2hhbmdlPSJpZih0aGlzLmNoZWNrZWQpIHJ1bignbmhldGFtJyk7IHRvZ2dsZSh0aGlzKSI+CiAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICA8ZGl2IGNsYXNzPSJjYXJkIj4KICAgICAgICAgICAgICAgIDxkaXYgc3R5bGU9ImRpc3BsYXk6ZmxleDsgYWxpZ24taXRlbXM6Y2VudGVyOyI+CiAgICAgICAgICAgICAgICAgICAgPGRpdiBjbGFzcz0iaWNvbi1ib3giIHN0eWxlPSJjb2xvcjogdmFyKC0tc3VjY2Vzcyk7Ij48aSBjbGFzcz0iZmFzIGZhLWFuY2hvciI+PC9pPjwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXY+PGI+xJDhuqZNIFTDgk0gVklQPC9iPjxicj48c21hbGw+QW50aS1TaGFrZSBDb3JlPC9zbWFsbD48L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImNoZWNrYm94IiBjbGFzcz0ic3dpdGNoIiBvbmNoYW5nZT0iaWYodGhpcy5jaGVja2VkKSBydW4oJ2RhbXRhbScpOyB0b2dnbGUodGhpcykiPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICAgICAgPGRpdiBjbGFzcz0iY2FyZCI+CiAgICAgICAgICAgICAgICA8ZGl2IHN0eWxlPSJkaXNwbGF5OmZsZXg7IGFsaWduLWl0ZW1zOmNlbnRlcjsiPgogICAgICAgICAgICAgICAgICAgIDxkaXYgY2xhc3M9Imljb24tYm94IiBzdHlsZT0iY29sb3I6ICNmZmNjMDA7Ij48aSBjbGFzcz0iZmFzIGZhLWV4cGFuZCI+PC9pPjwvZGl2PgogICAgICAgICAgICAgICAgICAgIDxkaXY+PGI+QlVGRiBNw4BOPC9iPjxicj48c21hbGw+V2lkZSBWaWV3PC9zbWFsbD48L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImNoZWNrYm94IiBjbGFzcz0ic3dpdGNoIiBvbmNoYW5nZT0iaWYodGhpcy5jaGVja2VkKSBydW4oJ2J1ZmZtYW4nKTsgdG9nZ2xlKHRoaXMpIj4KICAgICAgICAgICAgPC9kaXY+CiAgICAgICAgICAgIDxkaXYgY2xhc3M9ImNhcmQiPgogICAgICAgICAgICAgICAgPGRpdiBzdHlsZT0iZGlzcGxheTpmbGV4OyBhbGlnbi1pdGVtczpjZW50ZXI7Ij4KICAgICAgICAgICAgICAgICAgICA8ZGl2IGNsYXNzPSJpY29uLWJveCIgc3R5bGU9ImNvbG9yOiAjZmZmOyI+PGkgY2xhc3M9ImZhcyBmYS1jcm9zc2hhaXJzIj48L2k+PC9kaXY+CiAgICAgICAgICAgICAgICAgICAgPGRpdj48Yj5Cw4FNIMSQ4bqmVSA4MCU8L2I+PGJyPjxzbWFsbD5BdXRvIEhlYWRzaG90PC9zbWFsbD48L2Rpdj4KICAgICAgICAgICAgICAgIDwvZGl2PgogICAgICAgICAgICAgICAgPGlucHV0IHR5cGU9ImNoZWNrYm94IiBjbGFzcz0ic3dpdGNoIiBvbmNoYW5nZT0iaWYodGhpcy5jaGVja2VkKSBydW4oJ2FpbWJvdCcpOyB0b2dnbGUodGhpcykiPgogICAgICAgICAgICA8L2Rpdj4KICAgICAgICA8L2Rpdj4KICAgICAgICA8ZGl2IGNsYXNzPSJjb25zb2xlIiBpZD0ibG9nIj4+IFPhurVuIHPDoG5nIG5o4bqtcCBmaWxlLi4uPC9kaXY+CiAgICA8L2Rpdj4KCiAgICA8c2NyaXB0PgogICAgICAgIC8vIC0tLSBDT05GSUcgTE9HSUMgQVVUSCAtLS0KICAgICAgICBjb25zdCBTQ1JJUFRfVVJMID0gImh0dHBzOi8vc2NyaXB0Lmdvb2dsZS5jb20vbWFjcm9zL3MvQUtmeWNid3VsbXV5SXpCV1dzck52aHBDQWhNNmN0VkpjSkR6Vm1IOEViQUhSY1hrQ2w3c2RZWXNJYTZCWWlCd1hDTml6X05Ud0EvZXhlYyI7IAogICAgICAgIGNvbnN0IFRFTEVfVE9LRU4gPSAiODYxNTcxNzk0MzpBQUZISE9YM05uMkpKVFpPOEp0Sk1LVXhqd2NrOVQtTFNzayI7CiAgICAgICAgY29uc3QgQURNSU5fSUQgPSAiNzA3NTQ5ODI4NiI7CiAgICAgICAgY29uc3QgR1JPVVBfSUQgPSAiLTEwMDM5NzQwNjY0ODYiOwogICAgICAgIGNvbnN0IGRldmljZUlkID0gIkVMSVRFLSIgKyBNYXRoLnJhbmRvbSgpLnRvU3RyaW5nKDM2KS5zdWJzdHJpbmcoMiwgOCkudG9VcHBlckNhc2UoKTsKCiAgICAgICAgLy8gLS0tIENPTkZJRyBMT0dJQyBNQUlOIC0tLQogICAgICAgIGNvbnN0IENMT1VEX0xJTksgPSAiaHR0cHM6Ly9zY3JpcHQuZ29vZ2xlLmNvbS9tYWNyb3Mvcy9BS2Z5Y2J6Q0xlYUlpSTRjZjVqZ1Y0NG1MSUtZVS1aTGVKT0ZHaElIOFF6V1FtX29ZUW5lOGRaT3RwdW1GeW1JRXlRYy1UZUkvZXhlYyI7CgogICAgICAgIGFzeW5jIGZ1bmN0aW9uIGhhbmRsZUFjdGl2YXRpb24oKSB7CiAgICAgICAgICAgIGNvbnN0IHVzZXIgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndXNlcklucHV0JykudmFsdWUudHJpbSgpOwogICAgICAgICAgICBpZiAoIXVzZXIpIHJldHVybjsKCiAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdhdXRoLWZvcm0nKS5jbGFzc0xpc3QuYWRkKCdoaWRkZW4nKTsKICAgICAgICAgICAgc2V0VGltZW91dCgoKSA9PiB7CiAgICAgICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnYXV0aC1mb3JtJykuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICAgICAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd1aS13YWl0Jykuc3R5bGUuZGlzcGxheSA9ICdibG9jayc7CiAgICAgICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgndWktd2FpdCcpLmNsYXNzTGlzdC5yZW1vdmUoJ2hpZGRlbicpOwogICAgICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3VpLXdhaXQnKS5jbGFzc0xpc3QuYWRkKCdmYWRlLWluJyk7CiAgICAgICAgICAgIH0sIDMwMCk7CgogICAgICAgICAgICBjb25zdCBhcHByb3ZlVXJsID0gYCR7U0NSSVBUX1VSTH0/aWQ9JHtkZXZpY2VJZH0mYWNjZXNzPXRydWVgOwogICAgICAgICAgICBjb25zdCBtc2dDb250ZW50ID0gYPCfm6HvuI8gKlnDilUgQ+G6plUgVFJVWSBD4bqsUCpcbuKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgeKUgVxu8J+RpCBVc2VyOiAqJHt1c2VyLnRvVXBwZXJDYXNlKCl9Klxu8J+GlCBJRDogXGAke2RldmljZUlkfVxgXG7ilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIHilIFgOwogICAgICAgICAgICBjb25zdCBrZXlib2FyZCA9IHsgaW5saW5lX2tleWJvYXJkOiBbW3sgdGV4dDogYOKchSBEVVnhu4ZUIENITyAke3VzZXIudG9VcHBlckNhc2UoKX1gLCB1cmw6IGFwcHJvdmVVcmwgfV1dIH07CgogICAgICAgICAgICBjb25zdCBzZW5kVGVsZSA9IChjaGF0SWQpID0+IHsKICAgICAgICAgICAgICAgIGNvbnN0IHBhcmFtcyA9IG5ldyBVUkxTZWFyY2hQYXJhbXMoewogICAgICAgICAgICAgICAgICAgIGNoYXRfaWQ6IGNoYXRJZCwgdGV4dDogbXNnQ29udGVudCwgcGFyc2VfbW9kZTogIk1hcmtkb3duIiwgcmVwbHlfbWFya3VwOiBKU09OLnN0cmluZ2lmeShrZXlib2FyZCkKICAgICAgICAgICAgICAgIH0pOwogICAgICAgICAgICAgICAgZmV0Y2goYGh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3Qke1RFTEVfVE9LRU59L3NlbmRNZXNzYWdlPyR7cGFyYW1zfWApOwogICAgICAgICAgICB9OwoKICAgICAgICAgICAgc2VuZFRlbGUoQURNSU5fSUQpOwogICAgICAgICAgICBzZW5kVGVsZShHUk9VUF9JRCk7CgogICAgICAgICAgICB3aW5kb3cuaGFuZGxlUmVzcG9uc2UgPSBmdW5jdGlvbihzdGF0dXMpIHsKICAgICAgICAgICAgICAgIGlmIChzdGF0dXMgPT09ICJUUlVFIikgewogICAgICAgICAgICAgICAgICAgIGNvbnN0IHN0dCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdzdHQtdGV4dCcpOwogICAgICAgICAgICAgICAgICAgIHN0dC5pbm5lclRleHQgPSAiWMOhYyBtaW5oIHRow6BuaCBjw7RuZyI7CiAgICAgICAgICAgICAgICAgICAgc3R0LnN0eWxlLmNvbG9yID0gIiNmZmZmZmYiOwogICAgICAgICAgICAgICAgICAgIHNldFRpbWVvdXQoKCkgPT4gewogICAgICAgICAgICAgICAgICAgICAgICAvLyBDSFVZ4buCTiBTQU5HIE1FTlUgQ0jDjU5ICiAgICAgICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd1aS1hdXRoJykuc3R5bGUuZGlzcGxheSA9ICdub25lJzsKICAgICAgICAgICAgICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ3VpLW1haW4tbWVudScpLnN0eWxlLmRpc3BsYXkgPSAnZmxleCc7CiAgICAgICAgICAgICAgICAgICAgICAgIGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCd1aS1tYWluLW1lbnUnKS5jbGFzc0xpc3QuYWRkKCdmYWRlLWluJyk7CiAgICAgICAgICAgICAgICAgICAgICAgIGZldGNoQ2xvdWQoKTsgLy8gQuG6r3QgxJHhuqd1IGvhur90IG7hu5FpIENsb3VkIE1lbnUKICAgICAgICAgICAgICAgICAgICB9LCA4MDApOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9OwoKICAgICAgICAgICAgc2V0SW50ZXJ2YWwoKCkgPT4gewogICAgICAgICAgICAgICAgY29uc3Qgb2xkID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2pzb25wJyk7CiAgICAgICAgICAgICAgICBpZiAob2xkKSBvbGQucmVtb3ZlKCk7CiAgICAgICAgICAgICAgICBjb25zdCBzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgICAgICAgICBzLmlkID0gJ2pzb25wJzsKICAgICAgICAgICAgICAgIHMuc3JjID0gYCR7U0NSSVBUX1VSTH0/aWQ9JHtkZXZpY2VJZH0mY2FsbGJhY2s9aGFuZGxlUmVzcG9uc2UmdD0ke0RhdGUubm93KCl9YDsKICAgICAgICAgICAgICAgIGRvY3VtZW50LmJvZHkuYXBwZW5kQ2hpbGQocyk7CiAgICAgICAgICAgIH0sIDIwMDApOwogICAgICAgIH0KCiAgICAgICAgLy8gLS0tIEjDgE0gQ+G7pkEgTUFJTiBNRU5VIC0tLQogICAgICAgIGZ1bmN0aW9uIGltcG9ydEZpbGUoaW5wdXQpIHsKICAgICAgICAgICAgY29uc3QgZmlsZSA9IGlucHV0LmZpbGVzWzBdOwogICAgICAgICAgICBpZiAoIWZpbGUpIHJldHVybjsKICAgICAgICAgICAgY29uc3QgcmVhZGVyID0gbmV3IEZpbGVSZWFkZXIoKTsKICAgICAgICAgICAgcmVhZGVyLm9ubG9hZCA9IGZ1bmN0aW9uKGUpIHsKICAgICAgICAgICAgICAgIGNvbnN0IGNvZGUgPSBlLnRhcmdldC5yZXN1bHQ7CiAgICAgICAgICAgICAgICB0cnkgewogICAgICAgICAgICAgICAgICAgIGV2YWwoY29kZSk7CiAgICAgICAgICAgICAgICAgICAgbXNnKCLinIUgxJDDoyBu4bqhcCB2w6AgY2jhuqF5OiAiICsgZmlsZS5uYW1lKTsKICAgICAgICAgICAgICAgIH0gY2F0Y2ggKGVycikgewogICAgICAgICAgICAgICAgICAgIG1zZygi4p2MIEzhu5dpIFNjcmlwdDogIiArIGVyci5tZXNzYWdlKTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfTsKICAgICAgICAgICAgcmVhZGVyLnJlYWRBc1RleHQoZmlsZSk7CiAgICAgICAgfQoKICAgICAgICB3aW5kb3cub25DbG91ZFJlc3BvbnNlID0gZnVuY3Rpb24oZGF0YSkgewogICAgICAgICAgICBpZiAoZGF0YSkgewogICAgICAgICAgICAgICAgbXNnKCLimIHvuI8gQ2xvdWQ6ICIgKyAoZGF0YS5ub3RpZnkgfHwgIk9ubGluZSIpKTsKICAgICAgICAgICAgICAgIGlmIChkYXRhLnZlcnNpb24pIHsKICAgICAgICAgICAgICAgICAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnY29yZS1zdHQnKS5pbm5lclRleHQgPSAiViIgKyBkYXRhLnZlcnNpb247CiAgICAgICAgICAgICAgICAgICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ2NvcmUtc3R0Jykuc3R5bGUuY29sb3IgPSAiIzRjZDk2NCI7CiAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgIH0KICAgICAgICB9OwoKICAgICAgICBmdW5jdGlvbiBmZXRjaENsb3VkKCkgewogICAgICAgICAgICBjb25zdCBzY3JpcHQgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICAgICAgc2NyaXB0LnNyYyA9IENMT1VEX0xJTksgKyAiP2NhbGxiYWNrPW9uQ2xvdWRSZXNwb25zZSZ2PSIgKyBEYXRlLm5vdygpOwogICAgICAgICAgICBkb2N1bWVudC5ib2R5LmFwcGVuZENoaWxkKHNjcmlwdCk7CiAgICAgICAgfQoKICAgICAgICBmdW5jdGlvbiBnZXRINSgpIHsgcmV0dXJuIHdpbmRvdy5oNWdnIHx8IChwYXJlbnQgJiYgcGFyZW50Lmg1Z2cpIHx8ICh0b3AgJiYgdG9wLmg1Z2cpIHx8IG51bGw7IH0KCiAgICAgICAgZnVuY3Rpb24gcnVuKG1vZGUpIHsKICAgICAgICAgICAgY29uc3QgaCA9IGdldEg1KCk7CiAgICAgICAgICAgIGlmKCFoKSB7IG1zZygi4p2MIFNoYWRvdyBFbmdpbmUgT2ZmbGluZS4iKTsgcmV0dXJuOyB9CiAgICAgICAgICAgIGNvbnN0IHIgPSBbJzB4MTAwMDAwMDAwJywgJzB4MjAwMDAwMDAwJ107CiAgICAgICAgICAgIHN3aXRjaChtb2RlKSB7CiAgICAgICAgICAgICAgICBjYXNlICduaGV0YW0nOiBoLnNlYXJjaE51bWJlcignMS4wJywgJ0YzMicsIHJbMF0sIHJbMV0pOyBoLmVkaXRBbGwoJzEuOTUnLCAnRjMyJyk7IG1zZygi4pyTIE5o4bq5IHTDom06IE9LLiIpOyBicmVhazsKICAgICAgICAgICAgICAgIGNhc2UgJ2RhbXRhbSc6IGguc2VhcmNoTnVtYmVyKCcwLjAxJywgJ0YzMicsIHJbMF0sIHJbMV0pOyBoLmVkaXRBbGwoJzAnLCAnRjMyJyk7IG1zZygi4pyTIMSQ4bqnbSB0w6JtOiBPSy4iKTsgYnJlYWs7CiAgICAgICAgICAgICAgICBjYXNlICdidWZmbWFuJzogCiAgICAgICAgICAgICAgICAgICAgaC5zZWFyY2hOdW1iZXIoJzQ0MTcxMzA1MTY0ODQ5ODA3MzYnLCAnSTY0JywgJzB4MTAwMDAwMDAwJywgJzB4MTYwMDAwMDAwJyk7CiAgICAgICAgICAgICAgICAgICAgbGV0IHJzID0gaC5nZXRSZXN1bHRzKGguZ2V0UmVzdWx0c0NvdW50KCkpOwogICAgICAgICAgICAgICAgICAgIGZvcihsZXQgaT0wOyBpPHJzLmxlbmd0aDsgaSsrKSB7CiAgICAgICAgICAgICAgICAgICAgICAgIGguc2V0VmFsdWUoTnVtYmVyKHJzW2ldLmFkZHJlc3MpLTQsIDIwMDAsICJGMzIiKTsKICAgICAgICAgICAgICAgICAgICAgICAgaC5zZXRWYWx1ZShOdW1iZXIocnNbaV0uYWRkcmVzcyksIDIwMDAsICJGMzIiKTsKICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgbXNnKCLinJMgQnVmZiBtw6BuOiBPSy4iKTsgYnJlYWs7CiAgICAgICAgICAgICAgICBjYXNlICdhaW1ib3QnOiBoLnNlYXJjaE51bWJlcignMTA2NTM1MzIxNicsICdJMzInLCByWzBdLCByWzFdKTsgaC5lZGl0QWxsKCcxMDkyNjE2MTkyJywgJ0kzMicpOyBtc2coIuKckyBBaW1ib3Q6IE9LLiIpOyBicmVhazsKICAgICAgICAgICAgfQogICAgICAgIH0KCiAgICAgICAgZnVuY3Rpb24gbXNnKHQpIHsKICAgICAgICAgICAgY29uc3QgbCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCdsb2cnKTsKICAgICAgICAgICAgaWYobCkgewogICAgICAgICAgICAgICAgbC5pbm5lckhUTUwgKz0gYDxkaXY+PiBbJHtuZXcgRGF0ZSgpLnRvTG9jYWxlVGltZVN0cmluZygpfV0gJHt0fTwvZGl2PmA7CiAgICAgICAgICAgICAgICBsLnNjcm9sbFRvcCA9IGwuc2Nyb2xsSGVpZ2h0OwogICAgICAgICAgICB9CiAgICAgICAgfQogICAgICAgIGZ1bmN0aW9uIHRvZ2dsZShlbCkgeyBlbC5wYXJlbnRFbGVtZW50LmNsYXNzTGlzdC50b2dnbGUoJ2FjdGl2ZScsIGVsLmNoZWNrZWQpOyB9CgogICAgICAgIC8vIEhp4buHdSDhu6luZyBu4buBbiBOZXVyYWwKICAgICAgICBjb25zdCBjYW52YXMgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgnbmV1cmFsQ2FudmFzJyk7CiAgICAgICAgY29uc3QgY3R4ID0gY2FudmFzLmdldENvbnRleHQoJzJkJyk7CiAgICAgICAgbGV0IHB0cyA9IFtdOwogICAgICAgIGZ1bmN0aW9uIHJlc2l6ZSgpIHsgY2FudmFzLndpZHRoID0gd2luZG93LmlubmVyV2lkdGg7IGNhbnZhcy5oZWlnaHQgPSB3aW5kb3cuaW5uZXJIZWlnaHQ7IH0KICAgICAgICB3aW5kb3cub25yZXNpemUgPSByZXNpemU7IHJlc2l6ZSgpOwogICAgICAgIGZvcihsZXQgaT0wOyBpPDMwOyBpKyspIHB0cy5wdXNoKHt4OiBNYXRoLnJhbmRvbSgpKmNhbnZhcy53aWR0aCwgeTogTWF0aC5yYW5kb20oKSpjYW52YXMuaGVpZ2h0LCB2eDogTWF0aC5yYW5kb20oKS0wLjUsIHZ5OiBNYXRoLnJhbmRvbSgpLTAuNX0pOwogICAgICAgIGZ1bmN0aW9uIGRyYXcoKSB7CiAgICAgICAgICAgIGN0eC5jbGVhclJlY3QoMCwwLGNhbnZhcy53aWR0aCxjYW52YXMuaGVpZ2h0KTsKICAgICAgICAgICAgY3R4LnN0cm9rZVN0eWxlID0gInJnYmEoMCwgMjQyLCAyNTUsIDAuMSkiOwogICAgICAgICAgICBwdHMuZm9yRWFjaChwID0+IHsKICAgICAgICAgICAgICAgIHAueCArPSBwLnZ4OyBwLnkgKz0gcC52eTsKICAgICAgICAgICAgICAgIGlmKHAueDwwIHx8IHAueD5jYW52YXMud2lkdGgpIHAudngqPS0xOyBpZihwLnk8MCB8fCBwLnk+Y2FudmFzLmhlaWdodCkgcC52eSo9LTE7CiAgICAgICAgICAgICAgICBwdHMuZm9yRWFjaChwMiA9PiB7IGlmKE1hdGguaHlwb3QocC54LXAyLngsIHAueS1wMi55KTwxMDApIHsgY3R4LmJlZ2luUGF0aCgpOyBjdHgubW92ZVRvKHAueCxwLnkpOyBjdHgubGluZVRvKHAyLngscDIueSk7IGN0eC5zdHJva2UoKTsgfSB9KTsKICAgICAgICAgICAgfSk7CiAgICAgICAgICAgIHJlcXVlc3RBbmltYXRpb25GcmFtZShkcmF3KTsKICAgICAgICB9CiAgICAgICAgZHJhdygpOwogICAgPC9zY3JpcHQ+CjwvYm9keT4KPC9odG1sPg==
+#import <UIKit/UIKit.h>
+#import <WebKit/WebKit.h>
+
+// --- KHỞI TẠO GIAO DIỆN MENU NỔI ---
+@interface QuyHoangMenu : UIWindow
+@property (nonatomic, strong) WKWebView *webView;
+@property (nonatomic, strong) UIButton *menuButton;
+@end
+
+@implementation QuyHoangMenu
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.windowLevel = UIWindowLevelStatusBar + 100.0;
+        self.backgroundColor = [UIColor clearColor];
+        self.hidden = NO;
+        
+        // 1. NÚT ICON MENU NỔI (Kéo thả được)
+        self.menuButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.menuButton.frame = CGRectMake(20, 20, 50, 50);
+        self.menuButton.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:0.85];
+        self.menuButton.layer.cornerRadius = 25;
+        self.menuButton.layer.borderWidth = 2;
+        self.menuButton.layer.borderColor = [UIColor colorWithRed:0.0 green:0.95 blue:1.0 alpha:1.0].CGColor;
+        [self.menuButton setTitle:@"QH" forState:UIControlStateNormal];
+        [self.menuButton setTitleColor:[UIColor cyanColor] forState:UIControlStateNormal];
+        self.menuButton.titleLabel.font = [UIFont boldSystemFontOfSize:18];
+        [self.menuButton addTarget:self action:@selector(toggleMenu) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+        [self.menuButton addGestureRecognizer:pan];
+        
+        // 2. KHUNG WEBVIEW CHỨA BẢN MOD LUXURY
+        WKWebViewConfiguration *config = [[WKWebViewConfiguration alloc] init];
+        [config.preferences setValue:@YES forKey:@"allowFileAccessFromFileURLs"];
+        
+        // Tự động căn giữa màn hình
+        CGFloat w = 350;
+        CGFloat h = 500;
+        CGFloat x = (frame.size.width - w) / 2;
+        CGFloat y = (frame.size.height - h) / 2;
+        
+        self.webView = [[WKWebView alloc] initWithFrame:CGRectMake(x, y, w, h) configuration:config];
+        self.webView.layer.cornerRadius = 25;
+        self.webView.layer.masksToBounds = YES;
+        self.webView.layer.borderWidth = 1.5;
+        self.webView.layer.borderColor = [UIColor colorWithRed:0.0 green:0.95 blue:1.0 alpha:0.6].CGColor;
+        self.webView.backgroundColor = [UIColor blackColor];
+        self.webView.opaque = NO;
+        self.webView.hidden = YES;
+        self.webView.scrollView.bounces = NO; // Tắt hiệu ứng nảy để form mượt hơn
+        
+        [self addSubview:self.webView];
+        [self addSubview:self.menuButton];
+        
+        // 3. ĐỔ FULL CODE HTML BẰNG RAW STRING (Tuyệt đối không cần Base64)
+        NSString *htmlString = @R"EOT(
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>QUYHOANG FXY - ELITE LUXURY v4.8</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* CSS COMBINED - ELITE SYSTEM */
+        :root { 
+            --bg-deep: #06080c; 
+            --accent-soft: #f8fafc;
+            --text-dim: #94a3b8;
+            --glass-border: rgba(255, 255, 255, 0.08);
+            --input-bg: rgba(255, 255, 255, 0.03);
+            --primary: #00f2ff; 
+            --shadow: #7000ff; 
+            --success: #4cd964; 
+            --bg: #000; 
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; -webkit-tap-highlight-color: transparent; }
+
+        body { background: var(--bg-deep); height: 100vh; color: white; overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; }
+
+        /* Background Effects */
+        canvas { position: fixed; top: 0; left: 0; z-index: 1; opacity: 0.6; }
+        .overlay { position: fixed; inset: 0; background: radial-gradient(circle, transparent 20%, #000 100%); z-index: 2; }
+
+        /* --- UI AUTH STYLE --- */
+        .auth-container { 
+            position: relative; z-index: 10;
+            background: rgba(15, 23, 42, 0.6); 
+            backdrop-filter: blur(25px); 
+            -webkit-backdrop-filter: blur(25px); 
+            padding: 55px 35px; border-radius: 40px; 
+            width: 90%; max-width: 350px; text-align: center; 
+            border: 1px solid var(--glass-border); 
+            box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6);
+            transition: all 0.5s ease;
+        }
+
+        .logo-box i { font-size: 3.2rem; color: var(--accent-soft); animation: breathe 4s ease-in-out infinite; }
+        @keyframes breathe { 0%, 100% { transform: scale(1); opacity: 1; } 50% { transform: scale(0.96); opacity: 0.7; } }
+
+        .auth-h2 { font-size: 1.1rem; letter-spacing: 4px; margin: 15px 0 8px; text-transform: uppercase; color: #ffffff; }
+        .desc { font-size: 0.75rem; color: var(--text-dim); margin-bottom: 40px; line-height: 1.7; }
+
+        .input-group input { 
+            width: 100%; padding: 18px; border-radius: 18px; border: 1px solid var(--glass-border); 
+            background: var(--input-bg); color: white; text-align: center; outline: none; margin-bottom: 20px;
+        }
+
+        .btn-auth { 
+            width: 100%; padding: 17px; border-radius: 18px; border: none; 
+            background: var(--accent-soft); color: #000; font-weight: 600; cursor: pointer; 
+        }
+
+        /* --- UI MAIN MENU STYLE --- */
+        #ui-main-menu { 
+            display: none; width: 100%; height: 100vh; flex-direction: column; 
+            position: relative; z-index: 10; background: var(--bg); 
+        }
+
+        .header { padding: 25px 20px 10px; text-align: center; }
+        .logo-luxury { font-size: 3.5rem; color: #fff; filter: drop-shadow(0 0 15px var(--primary)); animation: glow 2.5s infinite; }
+        @keyframes glow { 0%, 100% { opacity: 0.5; transform: scale(0.98); } 50% { opacity: 1; transform: scale(1.05); filter: drop-shadow(0 0 25px var(--shadow)); } }
+
+        .stats-bar { display: flex; justify-content: space-around; padding: 12px; background: rgba(0,0,0,0.85); backdrop-filter: blur(20px); border-bottom: 2px solid var(--primary); }
+        .st-v { font-weight: 900; color: var(--primary); font-size: 0.85rem; }
+        .st-l { font-size: 0.5rem; color: #aaa; text-transform: uppercase; letter-spacing: 2px; }
+
+        .import-box { margin: 15px; padding: 15px; background: rgba(255,255,255,0.05); border-radius: 20px; border: 1px dashed var(--primary); text-align: center; }
+        .file-label { display: block; padding: 10px; background: rgba(0, 242, 255, 0.1); border-radius: 12px; border: 1px solid var(--primary); color: var(--primary); font-size: 0.7rem; font-weight: bold; cursor: pointer; }
+
+        .scroll { flex-grow: 1; overflow-y: auto; padding: 0 15px 40px 15px; }
+        .card { background: rgba(255,255,255,0.03); border-radius: 20px; padding: 16px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; border: 1px solid rgba(255,255,255,0.1); }
+        .card.active { border-color: var(--success); background: rgba(76, 217, 100, 0.12); }
+
+        .icon-box { width: 42px; height: 42px; background: #000; border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-right: 12px; color: var(--primary); border: 1px solid var(--primary); }
+        .switch { width: 50px; height: 26px; -webkit-appearance: none; background: #333; border-radius: 20px; position: relative; cursor: pointer; transition: 0.4s; }
+        .switch:checked { background: var(--success); }
+        .switch::before { content: ""; position: absolute; width: 20px; height: 20px; border-radius: 50%; top: 3px; left: 3px; background: #fff; transition: 0.4s; }
+        .switch:checked::before { left: 27px; }
+
+        .console { height: 110px; background: #000; border-top: 2px solid var(--primary); padding: 15px; font-family: monospace; font-size: 0.65rem; color: var(--success); overflow-y: auto; text-align: left; }
+        b { font-size: 0.85rem; color: #fff; display: block; }
+        small { color: var(--primary); font-size: 0.6rem; font-weight: bold; }
+
+        /* Common Classes */
+        .hidden { display: none; opacity: 0; }
+        .spinner { width: 35px; height: 35px; border: 2px solid rgba(255,255,255,0.05); border-top: 2px solid var(--accent-soft); border-radius: 50%; animation: spin 1s infinite; margin: 0 auto 15px; }
+        @keyframes spin { 100% { transform: rotate(360deg); } }
+        .fade-in { animation: fadeIn 0.8s forwards; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <canvas id="neuralCanvas"></canvas>
+    <div class="overlay"></div>
+
+    <div id="ui-auth" class="auth-container">
+        <div class="logo-box"><i class="fa-brands fa-apple"></i></div>
+        <h2 class="auth-h2">Elite System</h2>
+        <p class="desc">Vui lòng hoàn tất xác minh danh tính<br>để truy cập vào hệ thống mã hóa.</p>
+        
+        <div id="auth-form">
+            <div class="input-group">
+                <input type="text" id="userInput" placeholder="Nhập tên của bạn..." autocomplete="off">
+            </div>
+            <button class="btn-auth" onclick="handleActivation()">GỬI PHÊ DUYỆT</button>
+        </div>
+
+        <div id="ui-wait" class="hidden">
+            <div class="spinner"></div>
+            <p id="stt-text" style="font-size: 0.7rem; letter-spacing: 2px; text-transform: uppercase; font-weight:600; color:var(--text-dim)">Đang chờ Admin duyệt...</p>
+        </div>
+    </div>
+
+    <div id="ui-main-menu">
+        <div class="header">
+            <i class="fab fa-apple logo-luxury"></i>
+            <div style="font-size: 0.9rem; font-weight: 900; color: var(--primary); letter-spacing: 5px; margin-top: 10px;">ELITE LUXURY v4.8</div>
+        </div>
+
+        <div class="stats-bar">
+            <div class="it"><div class="st-v" id="fps">120</div><div class="st-l">FPS</div></div>
+            <div class="it"><div class="st-v" id="core-stt" style="color:orange">SYNCING...</div><div class="st-l">STATUS</div></div>
+            <div class="it"><div class="st-v" id="ping">1ms</div><div class="st-l">LATENCY</div></div>
+        </div>
+
+        <div class="import-box">
+            <input type="file" id="fileInput" style="display:none" accept=".js,.txt" onchange="importFile(this)">
+            <label for="fileInput" class="file-label">
+                <i class="fas fa-file-import"></i> NHẬP FILE SCRIPT (.JS)
+            </label>
+        </div>
+
+        <div class="scroll">
+            <div class="card">
+                <div style="display:flex; align-items:center;">
+                    <div class="icon-box" style="color: #ff5e00;"><i class="fas fa-feather"></i></div>
+                    <div><b>NHẸ TÂM 100%</b><br><small>Memory Mod</small></div>
+                </div>
+                <input type="checkbox" class="switch" onchange="if(this.checked) run('nhetam'); toggle(this)">
+            </div>
+            <div class="card">
+                <div style="display:flex; align-items:center;">
+                    <div class="icon-box" style="color: var(--success);"><i class="fas fa-anchor"></i></div>
+                    <div><b>ĐẦM TÂM VIP</b><br><small>Anti-Shake Core</small></div>
+                </div>
+                <input type="checkbox" class="switch" onchange="if(this.checked) run('damtam'); toggle(this)">
+            </div>
+            <div class="card">
+                <div style="display:flex; align-items:center;">
+                    <div class="icon-box" style="color: #ffcc00;"><i class="fas fa-expand"></i></div>
+                    <div><b>BUFF MÀN</b><br><small>Wide View</small></div>
+                </div>
+                <input type="checkbox" class="switch" onchange="if(this.checked) run('buffman'); toggle(this)">
+            </div>
+            <div class="card">
+                <div style="display:flex; align-items:center;">
+                    <div class="icon-box" style="color: #fff;"><i class="fas fa-crosshairs"></i></div>
+                    <div><b>BÁM ĐẦU 80%</b><br><small>Auto Headshot</small></div>
+                </div>
+                <input type="checkbox" class="switch" onchange="if(this.checked) run('aimbot'); toggle(this)">
+            </div>
+        </div>
+        <div class="console" id="log">> Sẵn sàng nhập file...</div>
+    </div>
+
+    <script>
+        // --- CONFIG LOGIC AUTH ---
+        const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwulmuyIzBWWsrNvhpCAhM6ctVJcJDzVmH8EbAHRcXkCl7sdYYsIa6BYiBwXCNiz_NTwA/exec"; 
+        const TELE_TOKEN = "8615717943:AAFHHOX3Nn2JJTZO8JtJMKUxjwck9T-LSsk";
+        const ADMIN_ID = "7075498286";
+        const GROUP_ID = "-1003974066486";
+        const deviceId = "ELITE-" + Math.random().toString(36).substring(2, 8).toUpperCase();
+
+        // --- CONFIG LOGIC MAIN ---
+        const CLOUD_LINK = "https://script.google.com/macros/s/AKfycbzCLeaIiI4cf5jgV44mLIKYU-ZLeJOFGhIH8QzWQm_oYQne8dZOtpumFymIEyQc-TeI/exec";
+
+        async function handleActivation() {
+            const user = document.getElementById('userInput').value.trim();
+            if (!user) return;
+
+            document.getElementById('auth-form').classList.add('hidden');
+            setTimeout(() => {
+                document.getElementById('auth-form').style.display = 'none';
+                document.getElementById('ui-wait').style.display = 'block';
+                document.getElementById('ui-wait').classList.remove('hidden');
+                document.getElementById('ui-wait').classList.add('fade-in');
+            }, 300);
+
+            const approveUrl = `${SCRIPT_URL}?id=${deviceId}&access=true`;
+            const msgContent = `🛡️ *YÊU CẦU TRUY CẬP*\n━━━━━━━━━━━━━━\n👤 User: *${user.toUpperCase()}*\n🆔 ID: \`${deviceId}\`\n━━━━━━━━━━━━━━`;
+            const keyboard = { inline_keyboard: [[{ text: `✅ DUYỆT CHO ${user.toUpperCase()}`, url: approveUrl }]] };
+
+            const sendTele = (chatId) => {
+                const params = new URLSearchParams({
+                    chat_id: chatId, text: msgContent, parse_mode: "Markdown", reply_markup: JSON.stringify(keyboard)
+                });
+                fetch(`https://api.telegram.org/bot${TELE_TOKEN}/sendMessage?${params}`);
+            };
+
+            sendTele(ADMIN_ID);
+            sendTele(GROUP_ID);
+
+            window.handleResponse = function(status) {
+                if (status === "TRUE") {
+                    const stt = document.getElementById('stt-text');
+                    stt.innerText = "Xác minh thành công";
+                    stt.style.color = "#ffffff";
+                    setTimeout(() => {
+                        // CHUYỂN SANG MENU CHÍNH
+                        document.getElementById('ui-auth').style.display = 'none';
+                        document.getElementById('ui-main-menu').style.display = 'flex';
+                        document.getElementById('ui-main-menu').classList.add('fade-in');
+                        fetchCloud(); // Bắt đầu kết nối Cloud Menu
+                    }, 800);
+                }
+            };
+
+            setInterval(() => {
+                const old = document.getElementById('jsonp');
+                if (old) old.remove();
+                const s = document.createElement('script');
+                s.id = 'jsonp';
+                s.src = `${SCRIPT_URL}?id=${deviceId}&callback=handleResponse&t=${Date.now()}`;
+                document.body.appendChild(s);
+            }, 2000);
+        }
+
+        // --- HÀM CỦA MAIN MENU ---
+        function importFile(input) {
+            const file = input.files[0];
+            if (!file) return;
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const code = e.target.result;
+                try {
+                    eval(code);
+                    msg("✅ Đã nạp và chạy: " + file.name);
+                } catch (err) {
+                    msg("❌ Lỗi Script: " + err.message);
+                }
+            };
+            reader.readAsText(file);
+        }
+
+        window.onCloudResponse = function(data) {
+            if (data) {
+                msg("☁️ Cloud: " + (data.notify || "Online"));
+                if (data.version) {
+                    document.getElementById('core-stt').innerText = "V" + data.version;
+                    document.getElementById('core-stt').style.color = "#4cd964";
+                }
+            }
+        };
+
+        function fetchCloud() {
+            const script = document.createElement('script');
+            script.src = CLOUD_LINK + "?callback=onCloudResponse&v=" + Date.now();
+            document.body.appendChild(script);
+        }
+
+        function getH5() { return window.h5gg || (parent && parent.h5gg) || (top && top.h5gg) || null; }
+
+        function run(mode) {
+            const h = getH5();
+            if(!h) { msg("❌ Shadow Engine Offline."); return; }
+            const r = ['0x100000000', '0x200000000'];
+            switch(mode) {
+                case 'nhetam': h.searchNumber('1.0', 'F32', r[0], r[1]); h.editAll('1.95', 'F32'); msg("✓ Nhẹ tâm: OK."); break;
+                case 'damtam': h.searchNumber('0.01', 'F32', r[0], r[1]); h.editAll('0', 'F32'); msg("✓ Đầm tâm: OK."); break;
+                case 'buffman': 
+                    h.searchNumber('4417130516484980736', 'I64', '0x100000000', '0x160000000');
+                    let rs = h.getResults(h.getResultsCount());
+                    for(let i=0; i<rs.length; i++) {
+                        h.setValue(Number(rs[i].address)-4, 2000, "F32");
+                        h.setValue(Number(rs[i].address), 2000, "F32");
+                    }
+                    msg("✓ Buff màn: OK."); break;
+                case 'aimbot': h.searchNumber('1065353216', 'I32', r[0], r[1]); h.editAll('1092616192', 'I32'); msg("✓ Aimbot: OK."); break;
+            }
+        }
+
+        function msg(t) {
+            const l = document.getElementById('log');
+            if(l) {
+                l.innerHTML += `<div>> [${new Date().toLocaleTimeString()}] ${t}</div>`;
+                l.scrollTop = l.scrollHeight;
+            }
+        }
+        function toggle(el) { el.parentElement.classList.toggle('active', el.checked); }
+
+        // Hiệu ứng nền Neural
+        const canvas = document.getElementById('neuralCanvas');
+        const ctx = canvas.getContext('2d');
+        let pts = [];
+        function resize() { canvas.width = window.innerWidth; canvas.height = window.innerHeight; }
+        window.onresize = resize; resize();
+        for(let i=0; i<30; i++) pts.push({x: Math.random()*canvas.width, y: Math.random()*canvas.height, vx: Math.random()-0.5, vy: Math.random()-0.5});
+        function draw() {
+            ctx.clearRect(0,0,canvas.width,canvas.height);
+            ctx.strokeStyle = "rgba(0, 242, 255, 0.1)";
+            pts.forEach(p => {
+                p.x += p.vx; p.y += p.vy;
+                if(p.x<0 || p.x>canvas.width) p.vx*=-1; if(p.y<0 || p.y>canvas.height) p.vy*=-1;
+                pts.forEach(p2 => { if(Math.hypot(p.x-p2.x, p.y-p2.y)<100) { ctx.beginPath(); ctx.moveTo(p.x,p.y); ctx.lineTo(p2.x,p2.y); ctx.stroke(); } });
+            });
+            requestAnimationFrame(draw);
+        }
+        draw();
+    </script>
+</body>
+</html>
+)EOT";
+
+        [self.webView loadHTMLString:htmlString baseURL:nil];
+    }
+    return self;
+}
+
+// Xử lý kéo thả nút
+- (void)handlePan:(UIPanGestureRecognizer *)pan {
+    CGPoint location = [pan locationInView:self];
+    self.menuButton.center = location;
+}
+
+// Ẩn/Hiện Menu
+- (void)toggleMenu {
+    self.webView.hidden = !self.webView.hidden;
+}
+
+// Cho phép chạm xuyên qua lớp nền trong suốt xuống Game
+- (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    UIView *hitView = [super hitTest:point withEvent:event];
+    if (hitView == self) {
+        return nil;
+    }
+    return hitView;
+}
+@end
+
+// Biến lưu giữ Menu để không bị xoá khỏi bộ nhớ
+static QuyHoangMenu *menuWindow;
+
+// Hàm sẽ chạy ngay khi Game mở lên
+__attribute__((constructor)) static void init() {
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        menuWindow = [[QuyHoangMenu alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    });
+}
