@@ -1,0 +1,7 @@
+Package: com.quyhoang.fxy
+Name: QuyHoang Fxy Elite
+Depends: mobilesubstrate
+Version: 4.8
+Architecture: iphoneos-arm
+Description: Menu Dylib by QuyHoangFxy
+Maintainer: QuyHoangFxy
