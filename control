@@ -2,8 +2,8 @@ Package: com.quyhoang.fxy
 Name: QuyHoang Fxy - Elite Luxury
 Depends: mobilesubstrate
 Version: 4.8
-Architecture: iphoneos-arm
-Description: Elite Luxury Mod Menu by QuyHoangFxy
+Architecture: iphoneos-arm64
+Description: Premium Mod Menu for iOS 6s Plus
 Maintainer: QuyHoangFxy
 Author: QuyHoangFxy
 Section: Tweaks
