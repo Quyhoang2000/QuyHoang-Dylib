@@ -1,13 +1,20 @@
 export THEOS_DEVICE_IP = 127.0.0.1
-TARGET = iphone:clang:latest:14.5
+export THEOS_DEVICE_PORT = 2222
+
 ARCHS = arm64 arm64e
+DEBUG = 0
+FINALPACKAGE = 1
+FOR_RELEASE = 1
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = QuyHoangElite
+TWEAK_NAME = QuyHoangFxy
 
-QuyHoangElite_FILES = Tweak.xm
-QuyHoangElite_CFLAGS = -fobjc-arc
-QuyHoangElite_FRAMEWORKS = UIKit WebKit
+$(TWEAK_NAME)_FILES = Tweak.xm
+$(TWEAK_NAME)_FRAMEWORKS = UIKit WebKit QuartzCore
+$(TWEAK_NAME)_CFLAGS = -fobjc-arc -std=c++11
 
 include $(THEOS_MAKE_PATH)/tweak.mk
+
+after-install::
+	install.exec "killall -9 SpringBoard"
